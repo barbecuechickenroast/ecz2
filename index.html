@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-    <title>EaglercraftZ Launcher</title>
+    <title>ECZ</title>
     <link rel="icon" href="favicon.ico" sizes="any">
     <meta name="description" content="EaglercraftZ 1.20.4">
     <meta name="keywords" content="eaglercraft, eaglercraftz, minecraft, 1.20, 1.20.4">
@@ -144,5 +144,11 @@
     </div>
 
     <script src="script.js"></script>
+    <script>
+        window.addEventListener('beforeunload', (event) => {
+            event.preventDefault();
+            event.returnValue = '';
+        });
+    </script>
 </body>
 </html>
